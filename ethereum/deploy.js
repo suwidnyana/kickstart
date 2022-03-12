@@ -1,7 +1,6 @@
 // deploy code will go here
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
-const { abi, evm } = require('./compile');
 const compiledFactory = require('./build/CampaignFactory.json');
 
 require('dotenv').config();
