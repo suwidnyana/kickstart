@@ -9,3 +9,5 @@ export default class index extends Component {
     return <div>index</div>;
   }
 }
+
+//never refresh page just duplicate page
