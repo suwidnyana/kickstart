@@ -10,6 +10,7 @@ export default class index extends Component {
   }
 
   renderCampaigns() {
+    console.log(this.props.campaigns.length);
     const items = this.props.campaigns.map((address) => {
       return {
         header: address,
@@ -29,6 +30,9 @@ export default class index extends Component {
       <Layout>
         <div>
           <h3>Open Campaigns</h3>
+          <h3>
+            {this.props.campaigns.length} Campaign Has Been Deployed In This Web
+          </h3>
           <Link href="/campaigns/new">
             <a>
               <Button
